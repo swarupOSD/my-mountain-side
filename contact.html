@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Himalayan Calling</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #21146b, #d6bfd4);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffffee;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #190eb6;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header h1 img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #3b2ef5;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #222;
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-left, .contact-right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-left h2 {
+      font-size: 28px;
+      color: #3b2ef5;
+      margin-bottom: 20px;
+    }
+
+    .contact-left p {
+      margin-bottom: 15px;
+    }
+
+    .contact-left a {
+      color: #3b2ef5;
+      text-decoration: none;
+    }
+
+    .contact-left button {
+      margin-top: 20px;
+      background-color: #3b2ef5;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-left button:hover {
+      background-color: #291cf0;
+    }
+
+    .contact-left h4 {
+      margin-top: 25px;
+      color: #222;
+      font-size: 16px;
+    }
+
+    .contact-right form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-right .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border 0.3s;
+    }
+
+    .contact-right input:focus,
+    .contact-right textarea:focus {
+      border-color: #3b2ef5;
+      outline: none;
+    }
+
+    .contact-right button {
+      background-color: #3b2ef5;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-right button:hover {
+      background-color: #291cf0;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .contact-container {
+        padding: 30px 20px;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>
+      <img src="https://m.media-amazon.com/images/M/MV5BOWY3ODYyZDgtOTliNy00OWE3LWIzNzgtM2NjMmFhM2JmZTM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Mountain Logo">
+      Himalayan Calling
+    </h1>
+    <nav>
+      <a href="home.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have questions, feedback, ideas, or want to collaborate—reach out!</p>
+      <p>Email us directly at <a href="mailto:contact@gmail.com">contact@gmail.com</a>. We typically reply within 24–48 hours.</p>
+      <button onclick="alert('Chat feature coming soon!')">Talk with us</button>
+      <h4>Email</h4>
+      <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+    </div>
+
+    <div class="contact-right">
+      <form action="https://formspree.io/f/xvganvqq" method="POST">
+        <div class="row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <input type="text" name="subject" placeholder="Subject (optional)" />
+        <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Himalayan Calling. All rights reserved.
+  </footer>
+
+</body>
+</html>
